@@ -24,3 +24,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 Video walkthrough:
 https://drive.google.com/file/d/1hZN7UPQhM8HtN_HVPRLl94mAN4lY8x4S/view
+
+SVG example files:
+
+https://github.com/Roadglide131/logo_maker/tree/main/examples
