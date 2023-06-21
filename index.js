@@ -22,22 +22,27 @@ const prompt = () => {
     },
     {
       type: "input",
-      name: "color",
-      message: "Enter a hex color code:",
+      name: "textColor",
+      message: "Enter a hex color code for the text:",
+    },
+    {
+      type: "input",
+      name: "shapeColor",
+      message: "Enter a hex color code for the shape:",
     },
   ]);
 };
-function renderSvg(shape, text, color) {
+function renderSvg(shape, text, textColor, shapeColor) {
   let shapeObject;
   switch (shape) {
     case "circle":
-      shapeObject = new Circle(text, color);
+      shapeObject = new Circle(text, textColor, shapeColor);
       break;
     case "square":
-      shapeObject = new Square(text, color);
+      shapeObject = new Square(text, textColor, shapeColor);
       break;
     case "triangle":
-      shapeObject = new Triangle(text, color);
+      shapeObject = new Triangle(text, textColor, shapeColor);
       break;
     default:
       throw new Error("invalid shape");
@@ -48,7 +53,7 @@ function renderSvg(shape, text, color) {
 prompt().then((data) => {
   fs.writeFile(
     `./examples/${data.shape}.svg`,
-    renderSvg(data.shape, data.text, data.color),
+    renderSvg(data.shape, data.text, data.textColor, data.shapeColor),
     function (error) {}
   );
 });
