@@ -23,4 +23,4 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ![capture_logo_maker.png](./images/capture_logo_maker.png)
 
 Video walkthrough:
-https://drive.google.com/file/d/1DTd7CSo-utNgMB356jvVrPm6uWgrA02p/view
+https://drive.google.com/file/d/1hZN7UPQhM8HtN_HVPRLl94mAN4lY8x4S/view
